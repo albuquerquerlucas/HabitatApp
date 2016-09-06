@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Habitat</string>
+
+    <string name="endereco_email">habitatpet@hotmail.com</string>
+    <string name="novo_cadastro">Não possui cadastro ainda?</string>
+    <string name="info_cadastro">Para efetuar seu cadastro informe e-mail e senha.</string>
+    <string name="hint_email">email@exemplo.com</string>
+    <string name="hint_senha">senha</string>
 </resources>
