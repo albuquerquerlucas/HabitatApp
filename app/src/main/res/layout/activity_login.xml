@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.lm.habitatapp.HomeActivity"
+    tools:context="com.lm.habitatapp.activity.LoginActivity"
     android:background="@drawable/gradient_s_splash">
 
     <LinearLayout
@@ -40,7 +40,7 @@
             android:paddingBottom="2dp"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:id="@+id/editText"
+            android:id="@+id/edtLEmail"
             android:inputType="textEmailAddress"
             android:layout_gravity="center_horizontal"
             android:background="@color/branco_fonte_logo"
@@ -55,7 +55,7 @@
             android:paddingBottom="2dp"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:id="@+id/editText2"
+            android:id="@+id/edtLSenha"
             android:inputType="textPassword"
             android:layout_gravity="center_horizontal"
             android:background="@color/branco_fonte_logo"
@@ -70,7 +70,7 @@
             android:paddingRight="35dp"
             android:text="entrar"
             android:textColor="@color/branco_fonte_logo"
-            android:id="@+id/button"
+            android:id="@+id/btnLEntrar"
             android:layout_gravity="right"
             android:background="@drawable/btn_entrar_seletor"/>
 
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="@string/novo_cadastro"
             android:textColor="@color/azulMedio"
-            android:id="@+id/btnNovoCadastro"
+            android:id="@+id/btnLNovoCadastro"
             android:background="@drawable/btn_novo_cadastro"/>
     </LinearLayout>
 

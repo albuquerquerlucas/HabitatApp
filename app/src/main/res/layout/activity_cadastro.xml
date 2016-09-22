@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lm.habitatapp.CadastroActivity"
+    tools:context="com.lm.habitatapp.activity.CadastroActivity"
     android:background="@drawable/gradient_s_splash">
 
     <LinearLayout
@@ -17,13 +17,13 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="203dp"
             android:id="@+id/imageView"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:src="@drawable/logo"
-            android:scaleX="0.5"
-            android:scaleY="0.5"/>
+            android:scaleX="0.8"
+            android:scaleY="0.8"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,7 +46,22 @@
             android:paddingRight="3dp"
             android:ems="10"
             android:background="@color/branco_fonte_logo"
-            android:id="@+id/editText3"
+            android:id="@+id/edtCNome"
+            android:hint="Nome e Sobrenome"
+            android:drawableRight="@mipmap/ic_action_person"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:ems="10"
+            android:background="@color/branco_fonte_logo"
+            android:id="@+id/edtCEmail"
             android:hint="@string/hint_email"
             android:drawableRight="@mipmap/ic_action_person"/>
 
@@ -61,7 +76,7 @@
             android:paddingRight="3dp"
             android:ems="10"
             android:background="@color/branco_fonte_logo"
-            android:id="@+id/editText4"
+            android:id="@+id/edtCSenha"
             android:hint="@string/hint_senha"
             android:drawableRight="@mipmap/ic_action_secure"/>
 
@@ -81,7 +96,7 @@
                 android:paddingRight="35dp"
                 android:textColor="@color/branco_fonte_logo"
                 android:text="cancelar"
-                android:id="@+id/btnCancelar"
+                android:id="@+id/btnCCancelar"
                 android:background="@drawable/btn_entrar_seletor"/>
 
             <Button
@@ -94,7 +109,7 @@
                 android:paddingRight="35dp"
                 android:textColor="@color/branco_fonte_logo"
                 android:text="Salvar"
-                android:id="@+id/btnSalvar"
+                android:id="@+id/btnCSalvar"
                 android:background="@drawable/btn_entrar_seletor"/>
         </LinearLayout>
 

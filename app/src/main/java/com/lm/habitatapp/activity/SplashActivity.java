@@ -1,11 +1,12 @@
-package com.lm.habitatapp;
+package com.lm.habitatapp.activity;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.lm.habitatapp.R;
 
 public class SplashActivity extends Activity {
 
@@ -25,7 +26,7 @@ public class SplashActivity extends Activity {
                     Log.e(ERR, "Erro na execução da Thread.");
                     e.printStackTrace();
                 }finally {
-                    Intent intent = new Intent(getContext(), HomeActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(intent);
                 }
             }
@@ -37,9 +38,5 @@ public class SplashActivity extends Activity {
     protected void onPause(){
         super.onPause();
         finish();
-    }
-
-    private Context getContext(){
-        return this;
     }
 }
