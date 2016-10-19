@@ -44,7 +44,7 @@
             android:inputType="textEmailAddress"
             android:layout_gravity="center_horizontal"
             android:background="@color/branco_fonte_logo"
-            android:hint="Usuário"
+            android:hint="Email"
             android:drawableRight="@mipmap/ic_action_person"/>
 
         <EditText

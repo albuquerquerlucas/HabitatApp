@@ -8,6 +8,9 @@
         <item name="colorAccent">@color/azulEscuro</item>
         <item name="android:colorBackground">@color/branco_fonte_logo</item>
         <item name="android:textColorPrimary">@color/azulEscuro</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
 </resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imgPeixe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/px09"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/nomePeixe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/azulEscuro"
+                android:text="@string/nome_peixe"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nomePeixeCientifico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/azulEscuro"
+                android:text="@string/nome_peixe_cientifico"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textColor="@color/azulEscuro"
+                    android:text="@string/crifrao"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/precoPeixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/azulEscuro"
+                    android:text="@string/preco_peixe"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/azulEscuro"
+                    android:text="@string/disponibilidade"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/statusPeixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/azulEscuro"
+                    android:text="@string/status_peixe"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_chevron_right_black_36dp"
+                android:tint="@color/azulEscuro"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

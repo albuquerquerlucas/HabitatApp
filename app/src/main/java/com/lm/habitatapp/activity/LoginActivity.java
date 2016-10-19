@@ -54,12 +54,12 @@ public class LoginActivity extends Activity {
         sessao = new SessionManager(getApplicationContext());
         ///sessao.setLogin(false);
 
-        if (sessao.isLoggedIn()) {
+        /*if (sessao.isLoggedIn()) {
 
             Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
             startActivity(intent);
             finish();
-        }
+        }*/
 
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,6 +104,7 @@ public class LoginActivity extends Activity {
                 Log.d(TAG, "Login Response: " + response.toString());
                 hideDialog();
 
+                // Luz no fim do túnel... :)
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
@@ -119,6 +120,7 @@ public class LoginActivity extends Activity {
                         String email = usuario.getString("email");
                         String data_de_criacao = usuario.getString("data_de_criacao");
 
+                        Log.i("Dados recuperados Ws: ", "" + nome + " " + email);  // Test ok@
                         db.salvarUsuario(nome, email, idUnico, data_de_criacao);
 
                         Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);

@@ -3,6 +3,7 @@
     package="com.lm.habitatapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".app.AppController"
@@ -12,6 +13,10 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDgx7HiuAX0Rc6040BzvbC65KYaxRVRln0" />
+
         <activity
             android:name=".activity.SplashActivity"
             android:screenOrientation="portrait">
@@ -26,7 +31,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.CadastroActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.PrincipalActivity"
             android:screenOrientation="portrait" />
